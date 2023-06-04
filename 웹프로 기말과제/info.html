@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>info</title>
+	<style>
+		@import url(webprogramming.css);
+	</style>
+	<script>
+		function showContent() {
+			var selectElement = document.getElementById("sobangSelc");
+			var selectedValue = selectElement.value;
+
+			var sobangTable = document.getElementById("sobangTable");
+			var history = document.getElementById("historyDiv");
+			var todoDiv = document.getElementById("todoDiv");
+
+			if(selectedValue == "mainBusiness"){
+				sobangTable.style.display = "block"
+				history.style.display = "none"
+				todoDiv.style.display = "none"
+			}else if(selectedValue == "history"){
+				sobangTable.style.display = "none"
+				history.style.display = "block"
+				todoDiv.style.display = "none"
+			}else{
+				sobangTable.style.display = "none"
+				history.style.display = "none"
+				todoDiv.style.display = "block"
+
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<div class="barDiv">
+	<nav class = "mainNav"> <!-- 페이지 이동 nav -->
+            <a href="introduce.html">자기 소개</a>
+            <a href="info.html">소방청 소개</a>
+            <a href="future.html">Future Plan</a>
+        </nav></div>
+        <header class = "mainHeader" onclick="window.location.href='introduce.html'"> <!-- 사진들어가는 헤더-->
+        	<p>소방청 소개</p>
+	</header>
+
+    <div class="mainDiv"><!-- 양옆 마진 div -->
+
+	 <form id="sobangSelect">  <!-- 폼으로 셀렉트 받아서 화면 띄우기-->
+	 		<label for="sobangSelc" >선택해주세요</label>
+	 		<select id="sobangSelc" onchange="showContent()">
+	 			<option value="mainBusiness">주요업무</option>
+	 			<option value="history">연혁</option>
+	 			<option value="myWork">담당업무</option>
+	 		</select>
+	 	</form>
+
+	 	<table id=sobangTable >  <!-- 소방테이블 -->
+	 		<tr>
+	 			<td>
+	 				<div class="imgContainer">
+	 					<div class="imgContainer2">
+	 						<img class="imgFloat" src="images/img1.png" alt="사진1">
+	 						<p>
+	 							<strong class="tableStrong" style="font-size: 20px">소방정책 수립 및 조정</strong>
+	 							<ul>
+	 								<li>소방업무 종합계획 수립, 소방력 기준 설정 및 운영</li>
+	 								<li>소방공무원 인사‧교육훈련, 복지 및 상훈제도 기획‧운영</li>
+	 								<li>지방소방관서 설치 및 지방소방행정에 대한 지도‧감독
+	 								</li>
+	 							</ul>
+	 						</p>
+	 					</div>
+	 				</div>
+	 			</td>
+	 			<td>
+	 				<div class="imgContainer">
+	 					<div class="imgContainer2">
+	 						<img class="imgFloat" src="images/img2.png" alt="사진2">
+	 						<p>
+	 							<strong class="tableStrong" style="font-size: 20px">화재예방 및 소방시설 관련 제도 운영</strong>
+	 							<ul>
+	 								<li>화재예방, 소방시설 설치‧유지 및 안전관리 법령 제‧개정</li>
+	 								<li>국가화재안전기준 운영, 다중이용업소‧초고층건물 안전관리</li>
+	 								<li>소방대상물 화재예방대책 수립 및 소방특별조사
+	 								</li>
+	 							</ul>
+	 						</p>
+	 					</div>
+	 				</div>
+	 			</td>
+	 		</tr>
+	 		<tr>
+	 			<td>
+	 				<div class="imgContainer">
+	 					<div class="imgContainer2">
+	 						<img class="imgFloat" src="images/img3.png" alt="사진3">
+	 						<p>
+	 							<strong class="tableStrong" style="font-size: 20px">화재진압 및 화재조사 기술개발</strong>
+	 							<ul>
+	 								<li>화재진압기술 개발‧보급, 화재경계 및 진압훈련 지도</li>
+	 								<li>화재원인조사‧분석‧감식 및 소방특별사법경찰관리 운영</li>
+	 								<li>위험물 안전관리 및 석유화학단지 사고예방 대책 수립</li>
+	 							</ul>
+	 						</p>
+	 					</div>
+	 				</div>
+	 			</td>
+	 			<td>
+	 				<div class="imgContainer">
+	 					<div class="imgContainer2">
+	 						<img class="imgFloat" src="images/img4.png" alt="사진4">
+	 						<p>
+	 							<strong class="tableStrong" style="font-size: 20px">긴급구조 역량 강화 및 구조‧구급정책 기획‧조정</strong>
+	 							<ul>
+	 								<li>구조‧구급제도 운영 및 정책 기획·조정</li>
+	 								<li>긴급구조 역량 강화 및 통합적 대응체계 구축</li>
+	 								<li>구조‧구급대원 교육‧훈련, 응급환자 대상 의료지도·상담</li>
+	 							</ul>
+	 						</p>
+	 					</div>
+	 				</div>
+	 			</td>
+	 		</tr>
+	 		<tr>
+	 			<td>
+	 				<div class="imgContainer">
+	 					<div class="imgContainer2">
+	 						<img class="imgFloat" src="images/img5.png" alt="사진5">
+	 						<p>
+	 							<strong class="tableStrong" style="font-size: 20px">소방산업 진흥 및 국민 생활안전 기반 강화</strong>
+	 							<ul>
+	 								<li>소방시설업 및 소방기술자 지도‧관리</li>
+	 								<li>소방산업진흥 정책 개발 및 소방용품 형식승인</li>
+	 								<li>생활안전사고 예방‧대응, 대국민 소방안전교육‧홍보</li>
+	 							</ul>
+	 						</p>
+	 					</div>
+	 				</div>
+	 			</td>
+	 			<td>
+	 				<div class="imgContainer">
+	 					<div class="imgContainer2">
+	 						<img class="imgFloat" src="images/img6.png" alt="사진6">
+	 						<p>
+	 							<strong class="tableStrong" style="font-size: 20px">소방장비 보급 및 항공구조구급 정책 개발</strong>
+	 							<ul>
+	 								<li>소방장비 관련 제도 제‧개정 및 관리체계 고도화</li>
+	 								<li>소방장비 표준화 및 소방정보통신 체계 구축</li>
+	 								<li>항공구조‧구급 정책 개발 및 재난현장 헬기 통합운영</li>
+	 							</ul>
+	 						</p>
+	 					</div>
+	 				</div>
+	 			</td>
+	 		</tr>
+	 	</table>
+
+	 	<div id="historyDiv" style="display: none;">  <!-- 연혁 div -->
+	 	<script type="text/javascript">
+	 		var hist = new String('<img id="historyImg" src="images/history.jpg" >');
+	 		document.write(hist);
+
+	 	</script>
+	 </div>
+
+	 	<div id="todoDiv" style="display: none;">  <!--할일-->
+	 		<details>
+    				<summary id="todoSum">입사 후 담당업무</summary>
+    					<ul id="todoUl">
+    						<li><p>데이터 기반 행정 활성화 시행계획 수립</p></li>
+    						<li><p>데이터 관리체계 구축 및 운영</p></li>
+    						<li><p>빅데이터 수집 및 전처리, 분석, 활용</p></li>
+    					</ul>
+    			</details>
+        </div>
+        
+
+
+	</div><!-- 양옆 마진 주는 div -->
+
+	<footer class="footDiv"> <!-- 맨밑 div -->
+		201801779 양재현 &nbsp &nbsp &nbsp
+		웹 프로그래밍 기말 과제 &nbsp &nbsp &nbsp
+        <a href="https://github.com/sunburn0325/webProgramming">GitHub</a>&nbsp &nbsp &nbsp
+        <a href="#"><button>TOP</button></a>
+
+    </footer>
+
+</body>
+</html>

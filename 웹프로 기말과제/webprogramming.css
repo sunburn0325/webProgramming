@@ -1,0 +1,212 @@
+		
+		html,body{
+			margin: 0; padding: 0;
+			width: 100%; height: 100%;
+
+		}
+		hr{
+			border: 1px solid #757575;
+			margin: 2%;
+			margin-top: 4%;
+			margin-bottom: 4%;
+		}
+		a{
+			text-decoration-line: none;
+		}
+		.sobangNav a{
+			color: black;
+		}
+		.mainDiv{
+			margin-left: 10%;
+			margin-right: 10%;
+			height: auto;
+			min-height: 100%;
+			padding-bottom: 200px;
+		}
+		.mainHeader{
+			background-image: url("images/sobang-img.png");
+			background-size: 100% 150%;
+			position: relative;
+			width: 100%; height: 200px;
+			background-repeat: no-repeat;
+			display: flex;
+			align-items: center;
+			
+		}
+		.mainHeader p{
+			color: whitesmoke;
+			font-size: 50px;
+			position: absolute;
+			text-shadow: 2px 2px black;
+			text-align: center;
+			width: 100%;
+			font-weight: 900;
+		}
+
+		.barDiv{
+			display: flex; 
+			height:70px;
+			background-color: #FFD07F;
+			margin-top: 0;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			/*<!--white-space: nowrap;-->*/
+		}
+		
+		.mainNav a{
+			margin: 0;
+			font-size: 20px;
+			font-weight: 600;
+			color: black;
+			padding: 3em;
+
+		}
+		.mainNav a:hover{
+			font-size: 21px;
+			color: darkred;
+		}
+		.introduceSection{
+			margin-top: 3%;
+		}
+		.introduceSection h2{
+			color: #E64A19;
+		}
+		.introduceSection h3{
+			margin-top: 50px;
+			margin-bottom: 30px;
+		}
+		.introduceSection p{
+			font-size: 18px;
+			line-height: 30px;
+			margin-top: 30px;
+			margin-bottom: 100px;
+		}
+
+		#sobangSelect{
+			margin-top: 3%;
+		}
+		#sobangSelect label{
+			font-size: 20px;
+		}
+		#sobangSelc{
+			margin-left: 10px;
+			font-size: 20px;
+			padding: 5px 30px 5px 10px;
+
+		}
+		#sobangSelect option{
+			background: #FDA65D;
+			color: white;
+		}
+		#sobangTable{
+
+			margin-top: 2em;
+			border-collapse: separate;
+			border-spacing: 20px;
+			/*width: 1500px;*/
+			height: 700px;
+			
+			border: none;
+			margin-left: auto;
+			margin-right: auto;
+			table-layout: fixed;
+
+		}
+		#historyDiv{
+			margin-top: 2em;
+		}
+
+		#todoDiv{
+			margin-top: 3em;
+		}
+		#todoDiv #todoUl li{
+			font-size: 20px;
+			margin-top: 50px;
+		}
+		#todoSum{
+			font-size: 30px;
+			font-weight: 900;
+			color: #E64A19;
+		}
+
+		td{
+			border: 1px solid #000;
+			margin: 3px;
+			height: 230px;
+
+		}
+		.imageContainer {
+			display: flex;
+			align-items: center;
+		}
+		.imgContainer2{
+			flex-grow: 1;
+
+		}
+		.imgFloat {
+			float: left;
+			margin-bottom: 10px;
+			margin-left: 20px;
+
+		}
+		.imgContainer2 ul{
+			list-style:circle;
+		}
+		.imgContainer2 li{
+			margin-top: 10px;
+			margin-left: 45px;
+			float: left;
+		}
+		.tableStrong{
+			margin-top: 5px;
+			margin-left: 25px;
+			display: inline-block;
+		}
+		.futureNav {
+    		background-color: #FF8243;
+    		color: white;
+    		position: fixed;
+    		right: 0;
+   	 		padding: 10px;
+   	 		margin: 20px;
+   	 	}
+   	 	.futureNav ol{
+   	 		list-style-type: decimal;
+   	 		marker-start: "0";
+   	 	}
+   	 	.futureNav a{
+   	 		text-decoration: none;
+   	 		color: white;
+   	 	}
+   	 	.futureNav li{
+   	 		margin-top: 20px;	
+   	 	}
+   	 	.studyOl ul{
+   	 		margin-top: 30px;
+   	 		margin-bottom: 30px;
+   	 		list-style-type: square;
+   	 	}
+   	 	.studyOl li{
+   	 		margin-top: 20px;
+   	 		margin-bottom: 20px;
+   	 	}
+   	 	.studyOl li p{
+   	 		font-size: 22px;
+   	 	}
+   	 	.studyDiv{
+   	 		font-size: 18px;
+			line-height: 30px;
+   	 	}
+
+		.footDiv{
+			background-color: darkgray;
+			text-align: center;
+			padding: 3em;
+			position: relative;
+			height: 30px;
+			transform: translateY(-100%);
+		}
+		.footDiv a{
+			color: black;
+		}

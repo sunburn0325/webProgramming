@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>future</title>
+	<style>
+		@import url(webprogramming.css);
+	</style>
+</head>
+<body>
+	<div class="barDiv">
+	<nav class = "mainNav"> <!-- 페이지 이동 nav -->
+            <a href="introduce.html">자기 소개</a>
+            <a href="info.html">소방청 소개</a>
+            <a href="future.html">Future Plan</a>
+        </nav>
+    </div>
+    <header class = "mainHeader" onclick="window.location.href='introduce.html'"> <!-- 사진들어가는 헤더-->
+    	<p>Future Plan</p>
+	</header>
+    <div class="mainDiv">
+
+    	<nav class="futureNav"> <!-- 미래 계획 nav -->
+            <ol start="0">
+            <li><a href="#"> 맨 위로</a></li>
+            <li><a href="#3-1"> 3학년 1학기</a></li>
+            <li><a href="#3-summer"> 3학년 여름방학</a></li>
+            <li><a href="#3-2"> 3학년 2학기</a></li>
+            <li><a href="#3-winter"> 3학년 겨울방학</a></li>
+            <li><a href="#4-1"> 4학년 1학기</a></li>
+            <li><a href="#4-summer"> 4학년 여름방학</a></li>
+            <li><a href="#4-2"> 4학년 2학기t 및 졸업 후</a></li>
+            </ol>
+        </nav>
+
+        <canvas id="myCanvas" width="500px" height="90px"></canvas>
+            <script type="text/javascript">
+                var canvas = document.getElementById("myCanvas");
+                var context = canvas.getContext("2d");
+                
+                context.fillStyle = "#E64A19";
+                context.font = "bold 30px arial";
+                context.fillText("미래계획", 20, 75);
+            </script>
+
+    		<ol class="studyOl">
+    			<li id="3-1" style="font-size: 25px;">3학년 1학기
+    					<ul>
+    						<li><p>데이터베이스</p></li>
+    						<div class="studyDiv">3학년1학기에 배우는 데이터베이스 과목은 이론이 좀 더 중요시 되기 때문에 이론을 위주로 공부하고, <br>
+                            데이터베이스 과목을 처음 배우기 때문에 수업에서 배운 기초부터 천천히 공부할 예정입니다.</div>
+    						<li><p>빅데이터 공부</p></li>
+    						<div class="studyDiv">빅데이터 과목은 실습이 좀 더 중요시 되기 때문에 실습을 위주로 공부하고, <br>
+                            마찬가지로 빅데이터 과목도 처음 배우는 과목이기 때문에 수업에서 배운 내용을 파이썬과 R로 실습을 하며 기초를 다질 예정입니다. </div>
+    					</ul>
+    				</li>
+
+    			<li id="3-summer" style="font-size: 25px;">3학년 여름방학
+    					<ul>
+    						<li><p>데이터베이스</p></li>
+    						<div class="studyDiv">한 학기 동안 수업에서 배운 내용들을 복습하고 다음 학기에 있을 실습을 준비할 예정입니다.<br>
+                            SQL을 미리 예습하여 수업에 잘 따라갈 수 있도록 할 것 입니다.</div>
+    						<li><p>빅데이터 공부</p></li>
+    						<div class="studyDiv">마찬가지로 한 학기 동안 수업에서 배운 내용들을 복습하고 R과 파이썬으로 빅데이터에 쓰이는 알고리즘을 실습할 예정입니다.</div>
+    						<li><p>여행</p></li>
+    						<div class="studyDiv">3학년2학기부터는 취업 준비와 자격증 준비로 바빠져 여행을 다닐 여유가 거의 없으므로<br>
+                            학교에서는 배울 수 없는 공부를 위해 국내, 해외 여행을 계획하여 방학에 다녀올 예정입니다. </div>
+    					</ul>
+    			</details></li>
+
+    			<li id="3-2" style="font-size: 25px;">3학년 2학기
+    					<ul>
+    						<li><p>데이터베이스</p></li>
+    						<div class="studyDiv">3학년 2학기에 배우는 데이터베이스는 실습 위주로 진행되므로 거기에 맞춰 SQL 공부를 꾸준히 할 예정입니다.</div>
+    						<li><p>빅데이터 공부</p></li>
+    						<div class="studyDiv">3학년 2학기에는 빅데이터 과목을 배우지 않기 때문에 혼자서 더욱 열심히 이론 및 실습에 대해 공부할 예정입니다.<br>
+                            특히 머신러닝과 통계학을 공부할 예정입니다.</div>
+    						<li><p>언어 공부</p></li>
+    						<div class="studyDiv">졸업에 필요하고 공무원에서도 중요시 여겨지는 토익을 공부할 예정입니다.<br>
+                            또한 JLPT도 계속 공부하여 해외 취업의 문을 넓혀 놓을 생각입니다.</div>
+    					</ul>
+    			</li>
+
+    			<li id="3-winter" style="font-size: 25px;">3학년 겨울방학
+    					<ul>
+    						<li><p>데이터베이스</p></li>
+    						<div class="studyDiv">3학년 2학기에 배운 수업 내용을 복습하고 기사 시험에 나오는 부분을 정리하여 기사 시험에 대비할 예정입니다.</div>
+    						<li><p>빅데이터 공부</p></li>
+    						<div class="studyDiv">빅데이터는 다른 소프트웨어 개발과는 다르게 통계학도 중요합니다.<br>
+                            그러므로 통계학을 공부할 예정입니다.</div>
+    						<li><p>언어 공부</p></li>
+    						<div class="studyDiv">토익 공부를 꾸준히 하여 토익 시험을 봐 750점 이상을 받을 예정입니다. </div>
+    						<li><p>공모전 출품</p></li>
+    						<div class="studyDiv">졸업을 위해서는 공모전을 출품해야 하므로 공모전에 출품을 할 예정입니다.</div>
+    					</ul>
+    				</li>
+
+    			<li id="4-1" style="font-size: 25px;">4학년 1학기
+    					<ul>
+    						<li><p>데이터베이스</p></li>
+    						<div class="studyDiv">4학년부터는 데이터베이스 과목을 배우지 않기 때문에 혼자 이론 공부와 실습 공부를 꾸준히 할 예정입니다.</div>
+    						<li><p>빅데이터 공부</p></li>
+    						<div class="studyDiv">4학년 때는 딥러닝에 대해 공부할 예정입니다.</div>
+    						<li><p>언어 공부</p></li>
+    						<div class="studyDiv">언어 공부는 코딩과 마찬가지로 꾸준히 해야 늘기 때문에 매일매일 단어 암기와 듣기 공부를 할 예정입니다.</div>
+    						<li><p>자격증 준비</p></li>
+    						<div class="studyDiv">졸업과 취업을 위해 정보처리기사 자격증 시험 준비를 할 예정입니다.</div>
+    					</ul>
+    				</li>
+
+    			<li id="4-summer" style="font-size: 25px;">4학년 여름방학
+    					<ul>
+    						<li><p>데이터베이스</p></li>
+    						<div class="studyDiv">실무에 있을 데이터베이스 실습을 공부할 예정입니다.</div>
+    						<li><p>빅데이터 공부</p></li>
+    						<div class="studyDiv">실무에 있을 빅데이터 실습을 공부할 예정입니다.</div>
+    						<li><p>언어 공부</p></li>
+    						<div class="studyDiv">언어 공부를 꾸준히 해줄 예정입니다.</div>
+    						<li><p>자격증 준비</p></li>
+    						<div class="studyDiv">취업에 도움이 되는 워드, 컴활 등의 자격증을 더 준비할 예정입니다.</div>
+    					</ul>
+    				</li>
+
+    			<li id="4-2" style="font-size: 25px;">4학년 2학기 및 졸업 후
+    					<ul>
+    						<li><p>취업 준비</p></li>
+    						<div class="studyDiv">부족했던 공부를 더 해주고 면접에도 대비하여 취업 준비를 철저히 할 예정입니다.</div>
+    					</ul>
+    				</li>
+    			</ol>
+    		
+    </div>
+   
+
+    <footer class="footDiv"> <!-- 맨밑 div -->
+		201801779 양재현 &nbsp &nbsp &nbsp
+        웹 프로그래밍 기말 과제 &nbsp &nbsp &nbsp
+		<a href="https://github.com/sunburn0325/webProgramming">GitHub</a>&nbsp &nbsp &nbsp
+		<a href="#"><button>TOP</button></a>
+
+    </footer>
+
+</body>
+</html>
